@@ -1,0 +1,83 @@
+
+body{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    margin:auto;
+    border:groove grey;
+    border-width:7px;
+    background-color:lightcyan;
+    color:brown;
+    padding:15px;
+    }
+
+h1,h2{
+     text-decoration: none;
+     font-size: 2.5em;
+     clear:both;
+     }
+
+h3 {
+   text-align:center;
+   }
+p {font-size: 18px;
+   }   
+
+img{width: 80%;}
+
+#grid-floats .grid-item {
+                        display: grid;
+                        text-align: center;
+                        width:18.5%;
+                        height: 500px;
+                        margin-left: 4%;
+                        margin-bottom: 2%;
+                        float: left;  
+                       }
+
+#grid-floats :nth-child(1){width:45%;}
+
+li{
+   list-style-type: none;
+   text-align:center;
+   border:8px solid rgb(174, 214, 241);
+   border-radius:80px;
+   overflow: auto;
+   padding:20px;
+  }
+
+#grid-flex{
+           display: flex;
+           flex-flow:row wrap; 
+           justify-content: space-around;  
+          }
+
+#grid-flex .grid-item{
+                      width: 50%;
+                      margin:8%;
+                     }
+
+#grid-flex :nth-child(1) {width: 55%;}
+
+@media all and (max-width:1200px){
+    img{width: 160px;}  
+
+    #grid-floats .grid-item{
+                            height: 400px;
+                            width:33%;
+                            margin:5px;
+                            background-color:rgba(255, 208, 0, 0.973);
+                           }
+    #grid-floats :nth-child(1){width:85%;
+                               height:auto;
+                              }
+    #grid-flex :nth-child(1){width: 85%;
+                                   }
+     #grid-flex{
+                 display: flex;
+                 flex-flow:row wrap;   
+                }
+       
+    #grid-flex .grid-item{
+                          width: 84%;
+                          margin: 4%;
+                         }
